@@ -10,6 +10,17 @@ GITHUB ALTERNATIVES:
   bitbucket
   gitbucket
 
+WORKING:
+github->git copy folder->working folder
+
+"git add filename" command :
+  It is used in git to add changes or new files to staging area.the staging area is where you prepare your changes before commiting them to repository. 
+
+"git status" command:
+  It is used to see the status of the file like modified ,unmodified,created etc..
+
+"git commit -m "commit message" command:
+  It is used in git to save changes made in the file in your repository.when you commit changes,you create a new version of your projecte's history.
 STEPS:
   download git and open command prompt and enter the command "git" to check if it was installed
   enter the following command in command prompt to set user name and email:
@@ -22,5 +33,6 @@ STEPS:
   4)to choose folder, enter this command "cd foldername" (cd github1)
   5).git file act as bridge between github and our system to view the .git file follow step 6
   6)open my_git folder in system ->github1->view->show->hidden items
+  7) after editing the file in local system enter the following  command in vscode terminal "git add intro.txt" where intro.txt is a file name.
 
 
