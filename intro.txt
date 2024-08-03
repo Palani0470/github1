@@ -10,3 +10,17 @@ GITHUB ALTERNATIVES:
   bitbucket
   gitbucket
 
+STEPS:
+  download git and open command prompt and enter the command "git" to check if it was installed
+  enter the following command in command prompt to set user name and email:
+  i)git config --global user.name "Palani0470"
+  ii)git config --global user.email "palani0470@gmail.com"
+  ----------------------
+  1)open terminal in vscode
+  2)enter the command "git code https://github.com/Palani0470/github1.git"
+  3)(https://github.com/Palani0470/github1.git)it is copied from github->repository->code->https
+  4)to choose folder, enter this command "cd foldername" (cd github1)
+  5).git file act as bridge between github and our system to view the .git file follow step 6
+  6)open my_git folder in system ->github1->view->show->hidden items
+
+
