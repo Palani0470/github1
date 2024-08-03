@@ -19,8 +19,12 @@ github->git copy folder->working folder
 "git status" command:
   It is used to see the status of the file like modified ,unmodified,created etc..
 
-"git commit -m "commit message" command:
+"git commit -m "commit message" "command:
   It is used in git to save changes made in the file in your repository.when you commit changes,you create a new version of your projecte's history.
+
+"git push origin main" command:
+ this command is used to save the changes made in local system on github repository.
+
 STEPS:
   download git and open command prompt and enter the command "git" to check if it was installed
   enter the following command in command prompt to set user name and email:
@@ -34,5 +38,8 @@ STEPS:
   5).git file act as bridge between github and our system to view the .git file follow step 6
   6)open my_git folder in system ->github1->view->show->hidden items
   7) after editing the file in local system enter the following  command in vscode terminal "git add intro.txt" where intro.txt is a file name.
-
+  8)enter command "git status" to check the status of the file.
+  9)Enter command 'git commit -m "file edited"
+  10)enter command "git push origin main" to save the changes in github.
+  11)now open the github repository and refresh it if needed to see the changes.
 
