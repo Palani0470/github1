@@ -1,0 +1,12 @@
+GIT:
+  git is a version control system.
+  it helps you keep track of code changes.
+  it is used to collobrate on code.
+
+GITHUB:
+  it is a web based repository hosting service.
+
+GITHUB ALTERNATIVES:
+  bitbucket
+  gitbucket
+
