@@ -32,10 +32,10 @@ STEPS:
   ii)git config --global user.email "palani0470@gmail.com"
   ----------------------
   1)open terminal in vscode
-  2)enter the command "git code https://github.com/Palani0470/github1.git"
+  2)enter the command "git clone https://github.com/Palani0470/github1.git"
   3)(https://github.com/Palani0470/github1.git)it is copied from github->repository->code->https
   4)to choose folder, enter this command "cd foldername" (cd github1)
-  5).git file act as bridge between github and our system to view the .git file follow step 6
+  5).git folder act as bridge between github and our system.To view the .git folder follow step 6
   6)open my_git folder in system ->github1->view->show->hidden items
   7) after editing the file in local system enter the following  command in vscode terminal "git add intro.txt" where intro.txt is a file name.
   8)enter command "git status" to check the status of the file.
