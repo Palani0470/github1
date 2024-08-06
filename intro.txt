@@ -13,6 +13,7 @@ GITHUB ALTERNATIVES:
 WORKING:
 github->git copy folder->working folder
 
+COMMANDS:
 "git add filename" command :
   It is used in git to add changes or new files to staging area.the staging area is where you prepare your changes before commiting them to repository. 
 
@@ -25,12 +26,37 @@ github->git copy folder->working folder
 "git push origin main" command:
  this command is used to save the changes made in local system on github repository.
 
-STEPS:
+"git pull" command:
+  this command is used to pull the changes from github(ex:creating new file via github repository) to local system.
+
+"cd foldername" command:
+  It is used to choose a folder a chance directory.
+
+"cd .." command:
+  It is used to change directory in reverse order.
+
+"git init" command:
+  It is used to add .git folder to the folder which was created in local system not cloned.
+
+"git add ." command:
+  It is used when we need to add more than one file at same time in staging area.
+
+"git remote add origin https://github.com/Palani0470/github2.git" command:
+  It is used to add https to folder which is newly created in local system.
+
+"git branch" command:
+  it is used to show all the branch in repository.
+
+"git branch -m main" command:
+  It is used to change the name of the branch.We can use any other name not only main.
+
+Installation:
   download git and open command prompt and enter the command "git" to check if it was installed
   enter the following command in command prompt to set user name and email:
   i)git config --global user.name "Palani0470"
   ii)git config --global user.email "palani0470@gmail.com"
-  ----------------------
+
+STEPS TO CLONE A FILE FROM GITHUB AND EDIT IT IN LOCAL SYSTEM AND SAVE IT IN repository:
   1)open terminal in vscode
   2)enter the command "git clone https://github.com/Palani0470/github1.git"
   3)(https://github.com/Palani0470/github1.git)it is copied from github->repository->code->https
@@ -43,3 +69,13 @@ STEPS:
   10)enter command "git push origin main" to save the changes in github.
   11)now open the github repository and refresh it if needed to see the changes.
 
+STEPS TO ADD A FILE OR FOLDER TO GITHUB WHICH WAS COMPLETLY CREATED IN LOCAL SYSTEM (NOT CLONED FROM GITHUB):
+
+  1)create a folder in local system and create some files in the folder.If needed , change the path using"cd .." for backward change and "cd filename" for forward change.
+  2)after creating the folder ,enter the command "git init".It is used to add .git file to the newly created folder which was created in local system.
+  3)After editing the files use the command "git add ." for adding multiple files to staging area.If there is only one file use "git add filename".
+  4)Next we need to Add commit message  'git commit -m "anymessage"'
+  5)Now we need to add origin to our folder which was created in the system.For that use the command "git remote add origin https://github.com/Palani0470/github2.git".
+  6)use command " git branch" to show all the branch in the repository.Initialy the branch name is named as master.
+  7)Now we need to chance the name of the branch from master to main.For that use the command "git branch -m main".
+  8)At last use the command "git push origin main" to save the files in github.
