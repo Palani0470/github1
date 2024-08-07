@@ -45,10 +45,19 @@ COMMANDS:
   It is used to add https to folder which is newly created in local system.
 
 "git branch" command:
-  it is used to show all the branch in repository.
+  Lists all local branches in your repository.Useful for seeing the branches you're currently working with.
 
 "git branch -m main" command:
   It is used to change the name of the branch.We can use any other name not only main.
+
+"git branch -a" command:
+  Lists all local and remote branches in your repository.Helpful when you want to see all available branches, including those on remote servers.
+
+"git checkout branchname" command:
+  Used to change currently working branch(like main to sub branch).
+
+"git merge branchname" command:
+  Used to save the changes in one branch which made in another branch(EX:saving changes made on sub branch in main branch ).
 
 Installation:
   download git and open command prompt and enter the command "git" to check if it was installed
@@ -79,3 +88,17 @@ STEPS TO ADD A FILE OR FOLDER TO GITHUB WHICH WAS COMPLETLY CREATED IN LOCAL SYS
   6)use command " git branch" to show all the branch in the repository.Initialy the branch name is named as master.
   7)Now we need to chance the name of the branch from master to main.For that use the command "git branch -m main".
   8)At last use the command "git push origin main" to save the files in github.
+
+WORKING WITH BRANCHES:
+  1)Let us  consider we created an another branch named as "sub_branch" in github repository.
+  2)Now we need to pull the sub branch to the local system.For that use "git pull" command.
+  3)Use "git branch -a" command to see all the branches.
+  4)Now we need to change branch we are currently working at . At beginning it was in main branch change it by using the command "git checkout sub_branch".
+  5)Now work in the current branch like creating editing file via vscode.
+  6)After editing push the file to staging area using the command "git add .".
+  7)Give commit message to the edited file using the command "git commit -m "file edited".
+  8)Push the edited file to github using the command " git push origin sub_branch".
+  9)This changes only occured in the sub branch .Incase we want to save the changes in main branch too, follow the below steps.
+  10)At first we need to change  the working branch from sub branch to main branch.For that use the command "git checkout main". 
+  11)Now use the command "git merge sub_branch" to save the changes in main branch.
+  12)To make the changes visible in github too, use the command "git push origin main".
