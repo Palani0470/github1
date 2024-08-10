@@ -59,6 +59,12 @@ COMMANDS:
 "git merge branchname" command:
   Used to save the changes in one branch which made in another branch(EX:saving changes made on sub branch in main branch ).
 
+"git branch branchname" command:
+  Used to create a branch.
+
+"clear" command:
+  Used to clear all the command which was entered previously.
+
 Installation:
   download git and open command prompt and enter the command "git" to check if it was installed
   enter the following command in command prompt to set user name and email:
@@ -102,3 +108,20 @@ WORKING WITH BRANCHES:
   10)At first we need to change  the working branch from sub branch to main branch.For that use the command "git checkout main". 
   11)Now use the command "git merge sub_branch" to save the changes in main branch.
   12)To make the changes visible in github too, use the command "git push origin main".
+
+HOW TO CREATE A BRANCH IN LOCAL SYSTEM AND HOW CAN WE MERGE THE FILE TO MAIN BRANCH WHEN WE DONT HAVE ACCESS FOR THE MAIN BRANCH:
+  1)At first open the terminal in vscode and if needed change the directory using  command "cd foldernmae".
+  2)Let us consider we need to create a branch with name sub_branch2.for that use the command "git branch sub_branch2" for creating the branch.
+  3)FOR checking use the command "git branch -a" to view all the branches.
+  4)select sub_branch2 by using the command "git checkout sub_branch2".
+  5)After selecting the branch,work in the branch like creating,deleting,updating a file.
+  6)After the editing process add the file using "git add ." ,"git commit -m "created" ,"git push origin sub_branch2".
+  7)There is no problem when you dont have the origin for sub_branch2,"git push origin sub_branch2"this command automatically create a origin in github.
+  8)Now we are going to add the file created in sub_branch2 to main branch without accessing main branch and without using merge command.for that follow the upcommong steps.
+  9)Open github ->pull requests -> new pull request
+  10)select base:main and compare:sub_branch2 and click create pull request button.
+  11) add a description and click "create pull request".
+  12)Now the request will pulled to main branch.Next we need to accept the request.
+  13)click the "pull requests" option.The request made will be shown below click the request you made.
+  14)click "merge request" -> "confirm merge".now the chances we made were added to main branch in git hub.
+  15) If you need to add the changes in main branch on your local system use the coammd "git merge sub_branch2".
